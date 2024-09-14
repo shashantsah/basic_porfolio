@@ -1,0 +1,239 @@
+/* Resetting browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #1f1f1f;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#home {
+    background: linear-gradient(rgba(31, 31, 31, 0.7), rgba(31, 31, 31, 0.7)), url('your-background.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.intro-text p {
+    font-size: 1.5em;
+    color: #ddd;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro-text h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.2em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#home h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#home p {
+    font-size: 1.5em;
+    color: #ddd;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Project Section */
+#projects {
+    background-color: #ffffff;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #1f1f1f;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.project {
+    background-color: #f9f9f9;
+    margin: 1.5em auto;
+    padding: 2em;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.project a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #2E7D32;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f0f0f0;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #1f1f1f;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+#skills ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 600px;
+}
+
+#skills ul li {
+    font-size: 1.2em;
+    color: #555;
+    margin: 1em 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #1f1f1f;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #2E7D32;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #home h1 {
+        font-size: 3em;
+    }
+
+    #projects .project {
+        margin: 1em 1em;
+        padding: 1.5em;
+    }
+
+    #skills ul {
+        font-size: 1em;
+    }
+}
